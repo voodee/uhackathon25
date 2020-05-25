@@ -1,0 +1,15 @@
+{
+  "name": "uhackathon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "blendid": "^4.5.3"
+  },
+  "scripts": {
+        "start": "NODE_ENV=development blendid",
+        "build": "blendid build",
+        "deploy": "NODE_ENV=production npm run build && firebase deploy",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
